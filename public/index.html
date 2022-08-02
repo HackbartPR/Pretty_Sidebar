@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pretty Sidebar</title>
+    <!-- ICONES EXTERNOS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <!-- STYLESHEET -->
+    <link href="./style.css" rel="stylesheet" />
+    <!-- FONTS EXTERNAS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="l-sideBar">
+      <!-- CAMPO CONTÉM TODO O CONTEUDO DO SIDEBAR -->
+      <div class="l-sideBar__content">
+        <!-- CAMPO PARA MARCAR O ÍCONE DO MENU E LOGO -->
+        <div class="l-sidebar__brand-wrapper">
+          <!-- LOGO E NOME -->
+          <div class="l-sidebar__brand-wrapper__brand">
+            <i class="bx bxl-html5"></i>
+            <span class="e-brand-name">HackbartLab</span>
+          </div>
+          <!-- ICONE MENU -->
+          <div class="l-sidebar__brand-wrapper__menu">
+            <i class="bx bx-menu"></i>
+          </div>
+        </div>
+
+        <!-- CAMPO PARA MARCAR PESQUISA-->
+        <div class="l-sideBar__search">
+          <!-- ICONE DE PESQUISA -->
+          <div class="l-sideBar__search__icon">
+            <i class="bx bx-search"></i>
+          </div>
+          <!-- INPUT DE PESQUISA -->
+          <div class="l-sideBar__search__input">
+            <input class="e-search-input" type="text" placeholder="Search..." />
+          </div>
+        </div>
+      </div>
+
+      <!-- CAMPO CONTÉM O CAMPO LOGOUT -->
+      <div class="l-sideBar__footer"></div>
+    </div>
+  </body>
+</html>
