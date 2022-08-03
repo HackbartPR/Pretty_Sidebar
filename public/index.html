@@ -15,19 +15,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <div class="l-sideBar">
+    <div id="l-sideBar" class="l-sideBar">
       <!-- CAMPO CONTÉM TODO O CONTEUDO DO SIDEBAR -->
       <div class="l-sideBar__content">
         <!-- CAMPO PARA MARCAR O ÍCONE DO MENU E LOGO -->
-        <div class="l-sidebar__brand-wrapper">
+        <div id="l-sidebar__brand-wrapper" class="l-sidebar__brand-wrapper">
           <!-- LOGO E NOME -->
-          <div class="l-sidebar__brand-wrapper__brand">
+          <div id="l-sidebar__brand-wrapper__brand" class="l-sidebar__brand-wrapper__brand">
             <i class="bx bxl-html5"></i>
             <span class="e-brand-name">HackbartLab</span>
           </div>
           <!-- ICONE MENU -->
           <div class="l-sidebar__brand-wrapper__menu">
-            <i class="bx bx-menu"></i>
+            <i id="menuBtn" class="bx bx-menu"></i>
           </div>
         </div>
 
@@ -38,8 +38,8 @@
             <i class="bx bx-search"></i>
           </div>
           <!-- INPUT DE PESQUISA -->
-          <div class="l-sideBar__search__input">
-            <input class="e-search-input" type="text" placeholder="Search..." />
+          <div id="l-sideBar__search__input" class="l-sideBar__search__input">
+            <input id="e-search-input" class="e-search-input" type="text" placeholder="Search..." />
           </div>
         </div>
       </div>
@@ -47,5 +47,6 @@
       <!-- CAMPO CONTÉM O CAMPO LOGOUT -->
       <div class="l-sideBar__footer"></div>
     </div>
+    <script src="../script.js"></script>
   </body>
 </html>

@@ -142,3 +142,16 @@ body {
 
   border: 1px solid red;
 }
+
+/* CLASSES PARA OS EVENTOS JAVASCRIPT */
+.centerMenu {
+  justify-content: center;
+}
+
+.hideElements {
+  display: none;
+}
+
+.hideSidebar {
+  width: auto;
+}
