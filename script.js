@@ -27,6 +27,14 @@ function hideMenu() {
   let inputSearch = document.getElementById('e-search-input')
   inputSearch.classList.add('hideElements')
 
+  //RETIRA O TEXTO DE DASHBOARD
+  let spanDashboard = document.getElementById('l-sidebar__dashboard__text')
+  spanDashboard.classList.add('hideElements')
+
+  //RETIRA O TEXTO DE USER
+  let spanUser = document.getElementById('l-sidebar__user__text')
+  spanUser.classList.add('hideElements')
+
   //CENTRALIZA O ICONE DO MENU
   let divBtnMenu = document.getElementById('l-sidebar__brand-wrapper')
   divBtnMenu.classList.add('centerMenu')
@@ -41,19 +49,27 @@ function showMenu() {
   let divBrand = document.getElementById('l-sidebar__brand-wrapper__brand')
   divBrand.classList.remove('hideElements')
 
-  //RETIRA A DIV DE PESQUISA
+  //INSERE A DIV DE PESQUISA
   let divSearch = document.getElementById('l-sideBar__search__input')
   divSearch.classList.remove('hideElements')
 
-  //RETIRA O INPUT DE PESQUISA
+  //INSERE O INPUT DE PESQUISA
   let inputSearch = document.getElementById('e-search-input')
   inputSearch.classList.remove('hideElements')
 
-  //CENTRALIZA O ICONE DO MENU
+  //INSERE O TEXTO DE DASHBOARD
+  let spanDashboard = document.getElementById('l-sidebar__dashboard__text')
+  spanDashboard.classList.remove('hideElements')
+
+  //INSERE O TEXTO DE USER
+  let spanUser = document.getElementById('l-sidebar__user__text')
+  spanUser.classList.remove('hideElements')
+
+  //DESCENTRALIZA O ICONE DO MENU
   let divBtnMenu = document.getElementById('l-sidebar__brand-wrapper')
   divBtnMenu.classList.remove('centerMenu')
 
-  //AJUSTA O TAMANHO DA SIDEBAR PARA ACOMODAR SOMENTE OS ICONES
+  //AJUSTA O TAMANHO DA SIDEBAR PARA ACOMODAR OS ICONES E OS TEXTOS
   let sideBar = document.getElementById('l-sideBar')
   sideBar.classList.remove('hideSidebar')
 }
