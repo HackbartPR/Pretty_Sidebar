@@ -1,5 +1,7 @@
 # Pretty Sidebar Navigation
 
+![Pretty_Sidebar](https://user-images.githubusercontent.com/95001642/183414745-8149d139-3864-47cc-92e3-be83efd8ec8c.gif)
+
 ## Sobre
 
 <p>Tendo sistemas totalmente implantados na Web, ter uma boa qualidade tanto no design quanto na experiência do usuário se torna uma obrigação. Esta Sidebar Navigation tem o intuito de mostrar um exemplo de uma sidebar que atenderia os requisitos mencionados.</p>
