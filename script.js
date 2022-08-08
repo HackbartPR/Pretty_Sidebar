@@ -43,6 +43,14 @@ function hideMenu() {
   let spanOrder = document.getElementById('l-sidebar__order__text')
   spanOrder.classList.toggle('showElements')
 
+  //RETIRA O TEXTO DE SAVED
+  let spanSaved = document.getElementById('l-sidebar__saved__text')
+  spanSaved.classList.toggle('showElements')
+
+  //RETIRA O TEXTO DE SETTINGS
+  let spanSettings = document.getElementById('l-sidebar__settings__text')
+  spanSettings.classList.toggle('showElements')
+
   //CENTRALIZA O ICONE DO MENU
   let divBtnMenu = document.getElementById('l-sidebar__brand-wrapper')
   divBtnMenu.classList.toggle('centerMenu')

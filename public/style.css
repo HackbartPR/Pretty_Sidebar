@@ -364,13 +364,193 @@ body {
   transition: all 0.2s ease;
 }
 
+/* SIDEBAR => CONTENT => SAVED */
+.l-sideBar__saved {
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 5px;
+
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.l-sideBar__saved:hover {
+  background-color: rgb(224, 222, 226);
+  color: rgb(30, 27, 49);
+}
+
+/* SIDEBAR => CONTENT => SAVED => ICON */
+.l-sideBar__saved__icon {
+  font-size: 20px;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+}
+
+/* SIDEBAR => CONTENT => SAVED => TEXT */
+.l-sidebar__saved__text {
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+/* SIDEBAR => CONTENT => SETTINGS */
+.l-sideBar__settings {
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 5px;
+
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.l-sideBar__settings:hover {
+  background-color: rgb(224, 222, 226);
+  color: rgb(30, 27, 49);
+}
+
+/* SIDEBAR => CONTENT => SETTINGS => ICON */
+.l-sideBar__settings__icon {
+  font-size: 20px;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+}
+
+/* SIDEBAR => CONTENT => SETTINGS => TEXT */
+.l-sidebar__settings__text {
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
 /* FOOTER */
 .l-sideBar__footer {
   position: relative;
   width: 100%;
-  height: 100px;
+  height: 60px;
 
-  /* border: 1px solid red; */
+  padding: 0 0;
+}
+
+/* FOOTER => CONTENT*/
+.l-sideBar__footer__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgb(30, 27, 49);
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 8px 8px;
+}
+
+.l-sideBar:not(.showSidebar) .l-sideBar__footer__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FOOTER => CONTENT PHOTO*/
+.l-sideBar__footer__content__photo {
+  position: relative;
+  height: 100%;
+  max-width: 60px;
+}
+
+.l-sideBar:not(.showSidebar) .l-sideBar__footer__content__photo {
+  display: none;
+}
+
+/* FOOTER => CONTENT PHOTO => PHOTO*/
+.e-user__photo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 5px;
+}
+
+/* FOOTER => CONTENT NAME */
+.l-sideBar__footer__content__name {
+  position: relative;
+  width: auto;
+  height: 100%;
+
+  white-space: nowrap;
+
+  font-size: 14px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-left: -10px;
+}
+
+.l-sideBar:not(.showSidebar) .l-sideBar__footer__content__name {
+  display: none;
+}
+
+/* FOOTER => CONTENT NAME => NAME*/
+.l-sideBar__footer__content__name__user {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* FOOTER => CONTENT NAME => JOB*/
+.l-sideBar__footer__content__name__job {
+  font-size: 13px;
+}
+
+/* FOOTER => CONTENT NAME => ICON*/
+.l-sideBar__footer__content__icon {
+  position: relative;
+  width: auto;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.l-sideBar:not(.showSidebar) .l-sideBar__footer__content__icon {
+  background-color: rgb(30, 27, 49);
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.l-sideBar:not(.showSidebar) .l-sideBar__footer__content__icon:hover {
+  background-color: #fff;
+  color: rgb(30, 27, 49);
 }
 
 /* TOOLTIP */
@@ -432,6 +612,20 @@ body {
 /* TOOLTIP FOLDER*/
 .l-sideBar:not(.showSidebar) .l-sideBar__order:hover .l-sidebar__tooltip {
   transform: translateX(135%);
+
+  opacity: 1;
+}
+
+/* TOOLTIP SAVED*/
+.l-sideBar:not(.showSidebar) .l-sideBar__saved:hover .l-sidebar__tooltip {
+  transform: translateX(134%);
+
+  opacity: 1;
+}
+
+/* TOOLTIP SETTINGS*/
+.l-sideBar:not(.showSidebar) .l-sideBar__settings:hover .l-sidebar__tooltip {
+  transform: translateX(128%);
 
   opacity: 1;
 }
